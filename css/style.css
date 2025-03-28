@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.addItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+    margin-top: 20px;
+
+}
+
+.addItem input{
+    width: 700px;
+    height: 30px;
+}
+
+.addItem button{
+    padding: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+@media(max-width:768px){
+    .container{
+        background-color: red;
+    }
+    .addItem input{
+        width: 400px;
+        height: 30px;
+        background-color: yellow;
+    }
+}
+
+@media(max-width:425px){
+    .container{
+        width: 100px;
+       flex-direction: column;
+       gap: 20px;
+    }
+    .container div{
+        width: 100px;
+       
+        border-bottom: 1px solid white;
+    }
+
+    .addItem input{
+        width: 300px;
+        height: 30px;
+        background-color: orange;
+    }
+
+    .addItem button{
+        width: 300px;
+    }
+}
